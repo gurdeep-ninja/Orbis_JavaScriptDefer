@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Orbis_JavascriptDefer>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Core />
+			</depends>
+		</Orbis_JavascriptDefer>
+	</modules>
+</config>
+
+

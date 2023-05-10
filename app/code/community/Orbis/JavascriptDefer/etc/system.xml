@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <honour translate="label">
+            <label><![CDATA[<div style="position: absolute;"><img id="honour_block" src="" alt="" border="0" /></div>&nbsp;<script>
+            var n = SKIN_URL.indexOf("adminhtml");
+            $('honour_block').src = SKIN_URL.substring(0, n) + "adminhtml/default/default/images/orbis/orbis.png";
+            </script>]]></label>
+            <sort_order>150</sort_order>
+        </honour>
+    </tabs>
+    <sections>
+        <deferjs translate="label" module="adminhtml">
+            <label>Defer Javascript</label>
+            <tab>honour</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+
+                <info>
+                    <label>Extension Information</label>
+                    <comment>
+                        <![CDATA[<p><strong>Version: 1.0</strong><br/>This extension defers Skin JS & app JS files. For technical support, please visit <a href="http://www.orbis.technology">http://www.orbis.technology</a>
+						  </p>
+							]]>
+                    </comment>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </info>
+                <config translate="label comment">
+                    <label>Configuration</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[If enabled the listed files will be defered until after the page has loaded and placed at the bottom of the page. <br/><span style="color:red"><strong>Important: </strong>If any funtionallity breaks, please remove all files from being deferred and add files one by one.</span> ]]></comment>
+                    <fields>
+                        <active translate="label comment">
+                            <label>Enable/Disable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <categoryfiles translate="label comment">
+                            <label>Defer Cms/Category JS Files</label>
+                            <comment>Comma seperate each file ie 'menu.js,jquery.effects.js'</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </categoryfiles>
+
+                        <productfiles translate="label comment">
+                            <label>Defer Product JS Files</label>
+                            <comment>Comma seperate each file ie 'menu.js,jquery.effects.js'</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </productfiles>
+                    </fields>
+                </config>
+            </groups>
+        </deferjs>
+    </sections>
+</config>

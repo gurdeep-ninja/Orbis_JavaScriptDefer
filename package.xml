@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<package>
+    <name>Orbis_JavascriptDefer</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Defer loading of javascript to eliminate render blocking scripts on your website.</summary>
+    <description>This plugin will allow you to selectively defer JavaScript files that have been added to your website. It works with a standard installation of Magento and keeps the default 'Merge JavaScript Files' functionality intact too - this extension works with or without "Merge JavaScript Files". This will help maintain fast rendering speed throughout your customer's experience, as well as improve your search page speed score.</description>
+    <notes>no notes</notes>
+    <authors>
+        <author>
+            <name>Orbis Technology</name>
+            <user>orbistechnology</user>
+            <email>me@gurdeepbangar.com</email>
+        </author>
+    </authors>
+    <date>2014-12-07</date>
+    <time>20:46:29</time>
+    <contents>
+        <target name="magecommunity">
+            <dir name="Orbis">
+                <dir name="JavascriptDefer">
+                    <dir name="Block">
+                        <dir name="Core">
+                            <dir name="Page">
+                                <dir name="Html">
+                                    <file name="Head.php" hash="a2a83fd831e043c84177e3fec7e5759f"/>
+                                </dir>
+                            </dir>
+                        </dir>
+                    </dir>
+                    <dir name="etc">
+                        <file name="adminhtml.xml" hash="27f4b4b0bcbcf7de163e06226d9f1d28"/>
+                        <file name="config.xml" hash="7ec34f3a9273442b7eb573347dbcc61e"/>
+                        <file name="system.xml" hash="818f55230e229cba42e8b0410d221fce"/>
+                    </dir>
+                </dir>
+            </dir>
+        </target>
+        <target name="mageskin">
+            <dir name="adminhtml">
+                <dir name="default">
+                    <dir name="default">
+                        <dir name="images">
+                            <dir name="orbis">
+                                <file name="orbis.png" hash="1a8613a9425754fafba80e604650fe8e"/>
+                            </dir>
+                        </dir>
+                    </dir>
+                </dir>
+            </dir>
+        </target>
+        <target name="mageetc">
+            <dir name="modules">
+                <file name="Orbis_JavascriptDefer.xml" hash="1139ae201e1dfdcfa8cd4060527e89ab"/>
+            </dir>
+        </target>
+    </contents>
+    <compatible/>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.1.0</min>
+                <max>6.0.0</max>
+            </php>
+            <package>
+                <name>Mage_Core</name>
+                <channel>community</channel>
+                <min></min>
+                <max></max>
+            </package>
+        </required>
+    </dependencies>
+</package>

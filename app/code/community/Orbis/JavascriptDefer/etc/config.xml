@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Orbis_JavascriptDefer>
+            <version>1.0.0</version>
+        </Orbis_JavascriptDefer>
+    </modules>
+    <global>
+        <blocks>
+            <!-- Start: Rewrites -->
+            <page>
+                <rewrite>
+                    <html_head>Orbis_JavascriptDefer_Block_Core_Page_Html_Head</html_head>
+                </rewrite>
+            </page>
+            <!-- End: Rewrites -->
+        </blocks>
+    </global>
+
+    <default>
+        <deferjs>
+            <general>
+                <text_field>Default value</text_field>
+                <textarea></textarea>
+                <dropdown>key2</dropdown>
+                <multiple_dropdown>key1,key2</multiple_dropdown>
+                <time>11,30,45</time>
+                <active>0</active>
+                <boolean>1</boolean>
+                <dependant_text_field>Default value</dependant_text_field>
+            </general>
+        </deferjs>
+    </default>
+</config>
